@@ -1,0 +1,177 @@
+html {
+	scroll-behavior: smooth
+}
+
+body { 
+	margin: 0 auto; 
+	background-color: #fdfaf6;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 48px;
+	font-weight: 900;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+h3 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: italic;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+h4 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+h5 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+p {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
+}
+
+.logo {
+	position: absolute;
+	display: flex;
+	padding-top: 20px;
+	padding-left: 45%;
+	justify-content: center;
+	z-index: 5000;
+}
+
+nav {
+	position: absolute;
+	padding-top: 35px;
+	padding-left: 75%;
+	text-decoration: none;
+	z-index: 2000;
+}
+
+nav a {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 18px;
+	margin-left: 15px;
+	line-height: 2em;
+	font-weight: 500;
+	text-decoration: none;
+	color: black;
+}
+
+
+nav a:hover {
+	border-bottom: 2px solid #e09e19;
+}
+
+.dropdownHeader {
+	display: inline-block;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background-color: white;
+	padding-right: 20px;
+	z-index: 5000;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.project:hover {
+	color: #e09e19;
+	cursor: pointer;
+	transition: .4s;
+}
+
+/*slideshow*/
+.slideshow-container {
+	width: 100%;
+  	position: relative;
+  	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.homeImages {
+	width: 50%;
+	height: 100vh;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  /*border-radius: 0 3px 3px 0;*/
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /*border-radius: 3px 0 0 3px;*/
+}
+
+
+/* Caption text */
+.text {
+	color: black;
+	text-align: left;
+	margin-left: 2%;
+	padding-top: 70vh;
+	position: absolute;
+	display: inline-block;
+}
+
+.dot {
+	display: none;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+
+
+
+
+
+
+

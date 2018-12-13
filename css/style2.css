@@ -1,0 +1,322 @@
+html {
+	scroll-behavior: smooth
+}
+
+
+body { 
+	margin: 0 auto; 
+	background-color: #fdfaf6;
+}
+
+
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 48px;
+	font-weight: 900;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 28px;
+	font-weight: 700;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+h3 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+	font-style: italic;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+h4 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+h5 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+p {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
+}
+
+.logo {
+	position: absolute;
+	display: flex;
+	padding-top: 20px;
+	padding-left: 45%;
+	justify-content: center;
+	z-index: 5000;
+}
+
+nav {
+	position: absolute;
+	padding-top: 35px;
+	padding-left: 75%;
+	text-decoration: none;
+	z-index: 2000;
+}
+
+nav a {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 18px;
+	margin-left: 15px;
+	line-height: 2em;
+	font-weight: 500;
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	border-bottom: 2px solid #e09e19;
+}
+
+h1 a {
+	text-decoration: none;
+}
+
+.dropdownHeader {
+	display: inline-block;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background-color: white;
+	padding-right: 20px;
+	z-index: 5000;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fdfaf6;
+}
+
+a:hover {
+	color: black;
+}
+
+.thumbnail {
+	display: flex;
+	width: 49.84%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: 100vh;
+
+}
+
+.row {
+	width: 100%;
+	height: 100vh;
+}
+
+
+.project {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.rotate {
+	position: fixed;
+	left: 88vw;
+	top: 77vh;
+	z-index: 5000;
+}
+
+.rotate {
+	animation: rotate 5s linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+	100% { 
+		transform: rotate(360deg); 
+	}
+}
+
+figure {
+	margin: 0;
+}
+
+.captionpos {
+	padding-top: 82vh;
+}
+
+.captionpos2 {
+	line-height: .9em;
+	padding-left: 30px;
+}
+
+.captiontext {
+	opacity: 0;
+	position: absolute;
+	width: 50%;
+	height: 100vh;
+	color: #fff;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	background-color: #e09e19;
+	transition: opacity .3s ease-in-out;
+}
+
+.caption:hover .captiontext {
+	opacity: 1;
+}
+
+/* NEXT */
+
+.captiontext2 {
+	opacity: 0;
+	position: absolute;
+	width: 50%;
+	height: 100vh;
+	color: #fff;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	background-color: #e09e19;
+	transition: opacity .3s ease-in-out;
+}
+
+.caption2:hover .captiontext2 {
+	opacity: 1;
+}
+
+/* NEXT */
+
+.captiontext3 {
+	opacity: 0;
+	position: absolute;
+	width: 50%;
+	height: 100vh;
+	color: #fff;
+	left: 0;
+	bottom: -100vh;
+	z-index: 2;
+	background-color: #e09e19;
+	transition: opacity .3s ease-in-out;
+}
+
+.caption3:hover .captiontext3 {
+	opacity: 1;
+}
+
+/* NEXT */
+
+.captiontext4 {
+	opacity: 0;
+	position: absolute;
+	width: 50%;
+	height: 100vh;
+	color: #fff;
+	right: 0;
+	bottom: -100vh;
+	z-index: 2;
+	background-color: #e09e19;
+	transition: opacity .3s ease-in-out;
+}
+
+.caption4:hover .captiontext4 {
+	opacity: 1;
+}
+
+
+.workExperience {
+	width: 70%;
+	height: 95vh;
+	position: absolute;
+	margin-top: 110px;
+	background-color: #f6ecea;
+	z-index: 1;
+}
+
+.workExperienceCopy {
+	width: 90%;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.resumeSchoolSkills {
+	width: 30%;
+	height: 95vh;
+	padding-left: 70%;
+	position: absolute;
+	margin-top: 110px;
+	background-color: white;
+}
+
+.resumeSchoolCopy {
+	width: 90%;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.bigPhoto {
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.intro {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.introAbout1 {
+	position: absolute;
+	width: 40%;
+	padding-left: 5vh;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.introAbout2 {
+	position: absolute;
+	width: 40%;
+	padding-left: 50vw;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.slideshowContainer2 {
+	padding-top: 215px;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+}
+
+
+
+
+
+
+
+
